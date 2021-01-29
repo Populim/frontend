@@ -1,5 +1,74 @@
-.parent{
+:root {
+  --coral: hsl(23, 83%, 82%);
+  --coral--b: hsl(23, 99%, 75%);
+  --pink: hsl(335, 52%, 92%);
+  --pink--b: hsl(335, 82%, 86%);
+  --yellow: hsl(42, 97%, 85%);
+  --yellow--b: hsl(42, 100%, 73%);
+  --green: hsl(100, 64%, 86%);
+  --green--b: hsl(100, 41%, 76%);
+  --blue: hsl(187, 61%, 79%);
+  --blue--b: hsl(187, 54%, 68%);
+  --purple: hsl(283, 24%, 86%);
+  --purple--b: hsl(283, 43%, 80%);
+  --light-gray-blue: hsl(0, 0%, 65%);
+
+  --pageMax: 1260px;
+  --headerHeight: 60px;
+  --middleHeight: 300px;
+  --footerHeight: 100px;
+}
+
+.gray {
+	background-color: var(--light-gray-blue);
+	border: 1px solid var(--light-gray-blue);
+}
+
+.green {
+	background-color: var(--green);
+	border: 1px solid var(--green-b);
+}
+
+.coral {
+	background-color: var(--coral);
+	border: 1px solid var(--coral-b);	
+}
+
+.blue {
+	background-color: var(--blue);
+	border: 1px solid var(--blue-b);
+}
+
+.parent {
+    width: 100%;
+    height: 450px;
+}
+
+.example1 .parent{
 	display: grid;
 	place-items: center;
-
 }
+
+.box {
+	font-size: 2rem;
+	padding: 1rem;
+	display: grid;
+	place-items: center;
+	border-radius: 1rem;
+	border-style: dashed;
+}
+
+
+
+.example2 .parent{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.example2 .box{
+	/*flex: 1 1 400px;*/
+	flex: 0 1 200px;
+	margin: 5px;
+}
+

@@ -19,6 +19,16 @@
   --footerHeight: 100px;
 }
 
+.purple {
+	background-color: var(--purple);
+	border: 1px solid var(--purple--b);
+}
+
+.yellow {
+	background-color: var(--yellow);
+	border: 1px solid var(--yellow--b);
+}
+
 .gray {
 	background-color: var(--light-gray-blue);
 	border: 1px solid var(--light-gray-blue);
@@ -26,17 +36,17 @@
 
 .green {
 	background-color: var(--green);
-	border: 1px solid var(--green-b);
+	border: 1px solid var(--green--b);
 }
 
 .coral {
 	background-color: var(--coral);
-	border: 1px solid var(--coral-b);	
+	border: 1px solid var(--coral--b);	
 }
 
 .blue {
 	background-color: var(--blue);
-	border: 1px solid var(--blue-b);
+	border: 1px solid var(--blue--b);
 }
 
 .parent {
@@ -72,3 +82,19 @@
 	margin: 5px;
 }
 
+.example3 .parent{
+	display: grid;
+	grid-template-columns: minmax(150px,25%) 1fr;
+
+}
+
+
+.example4 .parent{
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+.example4 .box{
+	border-radius: 0;
+	border-style: none;
+}
